@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+	<title>Form Validation</title>
+</head>
+<body>
+	<!-- contain the body tag and idea of the form -->
+	<div class="container">
+		<!-- Images -->
+		<div class="content">
+			<div class="logo">
+				<img src="https://svgshare.com/i/_go.svg">
+			</div>
+
+			<div class="image"></div>
+
+			<div class="text">Start for free & Get <br>
+			attractive offers today!</div>
+		</div>
+
+		<form id="form">
+			<!-- social media tags -->
+			<div class="social">
+				<div class="title">GET STARTED</div>
+
+				<div class="question">Already Have An Account?<br/><span>Sign In</span>
+				</div>
+
+				<div class="btn">
+					<div class="btn-1">
+						<img src="https://img.icons8.com/color/30/000000/google-logo.png"> Sign Up
+					</div>
+					<div class="btn-2">
+						<img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png"> Sign Up
+					</div>
+					<div class="btn-3">
+						<img src="https://img.icons8.com/ios-glyphs/30/000000/discord-logo.png"/>Sign Up
+					</div>
+				</div>
+				<div class="or">OR</div>
+			</div>
+			<!-- 3 inputs of users -->
+			<!-- User Name input -->
+			<div>
+				<label for="username">User Name</label>
+				<!-- user's icon -->
+				<i class="fas fa-user"></i> 
+
+				<input type="text" name="username" id="username" placeholder="abc1234">
+
+				<i class="fas fa-exclamation-circle failure-icon"></i>
+				<i class="far fa-check-circle success-icon"></i>
+
+				<div class="error"></div>
+			</div>
+
+			<!-- Email input -->
+			<div>
+				<label for="email">Email</label>
+				<!-- email/letter icon -->
+				<i class="far fa-envelope"></i>
+
+				<input type="email" name="email" id="email" placeholder="abc@gmail.com">
+				<!-- check/error icon -->
+				<i class="fas fa-exclamation-circle failure-icon"></i>
+				<i class="far fa-check-circle success-icon"></i>
+
+				<div class="error"></div>
+			</div>
+
+			<!-- Password input -->
+			<div>
+				<label for="password">Password</label>
+				<!-- lock icon -->
+				<i class="fas fa-lock"></i>
+
+				<input type="password" name="password" id="password" placeholder="Password here">
+
+				<i class="fas fa-exclamation-circle failure-icon"></i>
+				<i class="far fa-check-circle success-icon"></i>
+
+				<div class="error"></div>
+			</div>
+			<!-- Button part -->
+			<button id="btn" type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+	<script src="main.js"></script>
+</html>
